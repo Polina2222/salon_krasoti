@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=allure
+POSTGRES_USER=qlKrscPwULDpsanCGNoUwkslPPRIQXth
+POSTGRES_PASSWORD=gQvBoi9T9YpYf3NZLyqT5O2fbg1JkSnK9jt9Qk8dC92rOJrp8Dt95aowdr59Yr8B

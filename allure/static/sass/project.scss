@@ -1,0 +1,273 @@
+$primary-dark: #343a40;
+
+.navbar {
+  height: 80px;
+}
+
+.navbar {
+  background: none;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../images/nails.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .icons {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+      color: #b4b4b49f;
+      font-size: 25px;
+    }
+  }
+}
+
+.fullpage {
+  height: 100vh;
+  min-height: 500px;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 37, 36, 0.85);
+  }
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-brand {
+  width: 135px;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+  color: #555555;
+
+  .caption {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .caption-large {
+    font-weight: 100;
+    font-size: 70px;
+  }
+
+  .caption-end {
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      margin: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .info {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .line {
+    width: 100px;
+    border-bottom: 1px solid #ffff;
+    color: white;
+  }
+
+  .btn {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    width: 180px;
+    height: 54px;
+
+    background: #F9C766;
+  }
+
+  hr {
+    background-color: white;
+    height: 1px;
+  }
+}
+
+.footer-masthead {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(68, 67, 65, 0.2) 0%, rgba(99, 96, 95, 0.128125) 99.99%, rgba(153, 149, 149, 0) 100%);
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #555555;
+}
+
+.about {
+
+  background: url('../images/saloon.jpg');
+  color: white;
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-top: 20px;
+  }
+}
+
+.reviews {
+  background: url('../images/women.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+  h3 {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-data {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    color: #888888;
+  }
+
+  .review-rating {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      color: #F9C766;
+    }
+  }
+
+  .review-text {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    color: #B9B9B9;
+    position: relative;
+
+    .quote {
+      position: absolute;
+      top: -50px;
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      color: #F9C766;
+    }
+
+    .quote-one {
+      left: -30px;
+    }
+
+    .quote-two {
+      right: -30px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .dots {
+    margin-top: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      width: 10px;
+      height: 10px;
+      color: white;
+      background-color: #fff;
+      border-radius: 100%;
+
+      &.active {
+        background-color: #F9C766;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 415px;
+  background-color: #242424;
+  color: #FFFFFF;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  .icons {
+    display: flex;
+    width: 200px;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    i {
+      color: #5e5e5e;
+      font-size: 30px;
+    }
+  }
+}

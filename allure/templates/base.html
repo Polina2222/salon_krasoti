@@ -1,0 +1,214 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>{% block title %}Allure{% endblock title %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Behold My Awesome Project!" />
+  <meta name="author" content="Daniel Roy Greenfeld" />
+  <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+  <script src="https://kit.fontawesome.com/c62f3532ad.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600&display=swap" rel="stylesheet">
+  {% block css %}
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="{% static 'css/project.min.css' %}" rel="stylesheet" />
+  {% endblock %}
+</head>
+
+<body>
+  <section class="masthead">
+    <div class="pos-f-t navbar-custom">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/e4c7/d78a/eeb7116d8ae52648e34e4eb4285f2f01?Expires=1611532800&Signature=EMaelhPbKAGwTPFeNtabFaQyPGNZcIWC-9svhpq8UwyDeatMKSIV59o99HdTKMwymUNQbKCUFZey0l9a9k0PK~MZf~jDBeymKFm4FNYJr8O3g86pRGWCAtTjEvMS8X1PHRIMSbfOtQM8xYpnKZDcYKN4Z0dDoiw48iMEr6oA0Fm9HyZFa-BxKnfjKpuNHntN41ZFDOAPk8XmWIGgCUmT~BrAAAa20pvYp8llq1HBPHhN58BRh3fJWe0CKAJ0KPMQKbn7XGFsOvwhO6X8AxtbGFHTwlk5J0DE5-Z5TtYpp5XN~DLCOL33Mo2~yjDnjpxxzGN8byT2RHfco167HMjDJQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="">
+        </a>
+        <div class="d-flex ml-auto">
+          <a class="nav-link text-light" href="#">+7 (916) 339-81-14</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-6 text-center mr-auto">
+          <div class="heading">
+            <div class="caption">
+              <div class="line"></div>ДОБРО ПОЖАЛОВАТЬ В ПРОФЕССИОНАЛЬНЫЙ<div class="line"></div>
+            </div>
+            <div class="caption-large">ногтевой салон
+              <hr>
+            </div>
+            <div class="caption-end"><i class="fas fa-star"></i>В МОСКВЕ <i class="fas fa-star"></i></div>
+            <div class="info mt-2">Сеть салонов маникюра и педикюра ALLURE – выполняет широкий перечень услуг по уходу
+              за ногтями. Для нас нет невозможного в сфере красоты. Приходите и убедитесь сами!.</div>
+            <button class="btn btn-warning mt-4" data-toggle="modal" data-target="#requestCallBack">Заказать обратный звонок</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-masthead">
+        <div class="container h-100">
+          <div class="row justify-content-between align-items-center h-100">
+            <div> г. Москва, ул. Арбат, 22с1</div>
+            <div>+7(945) 555-55-55</div>
+            <div>Время работы: ежедневно: 10:00 - 22:00 </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-vk"></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="fullpage about">
+    <div class="wrapper py-5">
+      <div class="container h-100">
+        <div class="row align-items-center justify-content-between h-100">
+          <div class="col">
+            <h2>УЮТНЫЙ САЛОН</h2>
+            <p><span class="text-warning">ALLURE</span> встречает своих посетителей современным дизайном и атмосферой
+              уюта: огромное светлое пространство, изящная мебель, мягкие бархатные кресла. Это отличное место для того,
+              чтобы посвятить пару часов только себе!</p>
+          </div>
+          <div class="col">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/f3b4/04ad/b7458dec4a35511b0583d1a282a43169?Expires=1611532800&Signature=QU0AVkl8mDQYfiRlkPsF6Fc4tFaZuYRQNA7OdjlIuO20KA~iXxrr8MlH0eue010Ab65BrRyatY3eUHUR8AyooPjzjrhlhvibUyi6ex9BsnBluTwHI0BjHq4mAQ5kkg0ENENRb5K2mejsVbxKNuSPFUyDbUVWcaSz26YXc2nZlWuySxP8AHhFZPm~k18ZjCLROdXcGGh43ldAqdLeazXCPsCGU1ly3jTUzOeHB~Yc50WUPjlUMyfQW3kFjMKsxdD58vePoEuh5gu7Sh9n~uyopUy57JIr4PuojTn5MnFAPUiIMI5N9oXorEXQt-IqZDKYfXXShdPj2A4P4x6bSUuqwA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+              class="img-fluid" alt="salon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="fullpage reviews">
+    <div class="wrapper py-5">
+      <div class="container h-100">
+        <div class="row align-items-center justify-content-between h-100">
+          <div class="col text-center">
+            <h2><span class="text-warning">Отзывы</span> наших клиентов</h2>
+            <div class="mt-5 review">
+              <h3>Вика</h3>
+              <div class="mt-2 review-data">9.06.20 (маникюр+педикюр)</div>
+              <div class="review-rating mt-3">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="review-text mt-5">
+                <span class="quote quote-one">“</span>
+                Всем добрый день! Хочу донести до тех, кто ищет прекрасного мастера своего дела... Красота наша - это
+                все для нас. Так вот! Была у Мастера Оксаны Юрловой! Необыкновенная девушка, с такими удивительными
+                навыками и мастерством, что слов даже нет! Прекрасный маникюр и педикюр!!! Она волшебница!!! Красива,
+                немногословна, отлично и красиво без болезненно выполнила свою работу, за что ей Безумно благодарна!
+                Всем рекомендую! Оксаночка! Вам крепкое здоровье, молодости и красоты, благодарных клиентов и карьерного
+                роста! Мария!
+                <span class="quote quote-two">“</span>
+              </div>
+              <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="active"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container h-100">
+      <div class="row justify-content-between h-100 align-items-center">
+        <div class="col">
+          <div>Cалон ALLURE в Москве</div>
+          <div class="icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="col d-flex flex-column h-50 justify-content-between">
+          <span> г. Москва, ул. Арбат, 22с1</span>
+          <span>Время работы: ежедневно:
+            10:00 - 22:00 </span>
+          <span> +7(945) 555-55-55</span>
+        </div>
+        <div class="col"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.4823602158344!2d37.59085431567997!3d55.7501224996665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bb330ee0fdf%3A0x5e592a90283c9e82!2z0YPQuy4g0JDRgNCx0LDRgiwgMjIsINCc0L7RgdC60LLQsCwgMTE5MDAy!5e0!3m2!1sru!2sru!4v1610440894031!5m2!1sru!2sru"
+            width="100%" height="300" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe></div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="requestCallBack" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="requestCallBackLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="requestCallBackLabel">Обратный звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="{% url 'home' %}" method="post">
+            <div class="form-group">
+              <label for="name" class="-label">Введите ваше имя:</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Например, Екатерина" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Введите номер телефона:</label>
+              <input type="tel" name="phone" class="form-control" id="phone" placeholder="+7(999) 999 99 99" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Введите email:</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="mail@mail.ru" />
+            </div>
+            <div class="form-group">
+              <label for="service" class="form-label">Введите услугу:</label>
+              <input type="text" name="comment" class="form-control" id="service" placeholder="Например, ноготочки" />
+            </div>
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-auto mr-auto"><button type="submit" class="btn btn-primary">Отправить форму</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% block modal %} {% endblock modal %}
+  {% block javascript %}
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="{% static 'js/project.js' %}"></script>
+  {% endblock javascript %}
+</body>
+
+</html>
